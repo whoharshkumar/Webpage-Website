@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+        <div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+           <div class="wave"></div>
+        </div>
+     
+    <nav>
+        <div class="main-nav container flex">
+            
+            <a href="#" class="company-logo">
+                <img src="harsh.png" alt="Company Logo">
+            </a>
+            <div class="nav-link">
+                <ul class="flex">
+                    <li class="hover-link nav-items">International</li>
+                    <li class="hover-link nav-items">Finance</li>
+                    <li class="hover-link nav-items">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <input id ="search-text" type="text" class="news-input" id="search-text" placeholder="eg. International news ">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            <div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+             </div>
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="http://via.placeholder.com/400x200" alt="news-image" id="news-img">
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is a title</h3>
+                <h6 class="news-source" id="news-source">08/07/2024</h6>
+                <p class="news-description" id="news-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit enim fuga dolore a, cumque ipsum doloribus culpa reprehenderit temporibus? Cupiditate, quas? Magnam animi sapiente alias tempore cupiditate odit? Velit, nostrum.</p>
+            </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
